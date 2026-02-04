@@ -5,9 +5,6 @@ A real-time chat application whose style is heavily inspired by WhatsApp. Built 
 > [!WARNING]
 > Messages sent in direct messages and group chats are **_not encrypted_** and are stored as **_plain text_** in the database. **DO NOT share** sensitive information, such as passwords, financial details, or any private data that you use in other applications or accounts. Use this chat app only for the purpose of previewing a demo application.
 
-### 🚩 Live Demo
-
-Current version running at: [https://realtime-chat-app-one-topaz.vercel.app](https://realtime-chat-app-one-topaz.vercel.app)
 
 > [!NOTE]
 > It may take up to 1 minute for the site to be brought up while the loading indicator is displayed, since free instances in Render will spin down with inactivity which can delay requests by 50 seconds or more.

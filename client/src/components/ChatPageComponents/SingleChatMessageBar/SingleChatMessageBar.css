@@ -1,0 +1,111 @@
+.message-bar {
+  padding: 1rem;
+  height: 10%;
+  /* height: 80px; */
+  max-height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.message-bar .message-bar-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-bar .emoji-picker-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-bar .message-bar-icon:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #415763;
+}
+
+.message-bar .message-bar-searchbar {
+  width: 85%;
+}
+
+.message-bar .message-bar-search-input {
+  /* background-color: #415763; */
+  background-color: #2a3942;
+  height: 2.5rem;
+  text-indent: 1rem;
+  border-radius: 10px;
+  color: #d1d7db;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji",
+    "Segoe UI", sans-serif;
+}
+
+.message-bar .message-bar-search-input:focus {
+  border: none;
+  outline: none;
+}
+
+.message-bar .message-bar-icon {
+  position: relative;
+}
+
+.message-bar button.message-bar-icon {
+  background-color: transparent;
+  border: none;
+  color: #e9edef;
+}
+
+.message-bar .message-bar-icon.recording {
+  background-color: #b91c1c;
+  color: #fff;
+}
+
+.message-bar .emoji-picker {
+  position: absolute;
+  bottom: 4rem;
+  left: 0;
+  z-index: 30;
+  max-width: 24rem;
+  max-height: 22rem;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.message-bar .attachment-hidden-input {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .message-bar {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .message-bar .message-bar-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1.25rem;
+  }
+
+  .message-bar .message-bar-searchbar {
+    width: 100%;
+  }
+
+  .message-bar .emoji-picker {
+    position: fixed;
+    bottom: 4.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    max-width: none;
+    max-height: 55vh;
+  }
+}

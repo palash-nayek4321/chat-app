@@ -1,0 +1,28 @@
+.chat-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .chat-page {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100vh;
+  }
+
+  .chat-page.chat-open .left-sidebar,
+  .chat-page.chat-open .chat-list {
+    display: none;
+  }
+
+  .chat-page.chat-open .single-chat {
+    height: 100%;
+  }
+
+  .chat-page:not(.chat-open) .single-chat {
+    display: none;
+  }
+}

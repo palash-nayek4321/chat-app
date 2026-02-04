@@ -1,0 +1,130 @@
+.request-chat {
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.request-chat:hover {
+  background-color: #005c4b20;
+  cursor: pointer;
+}
+
+.request-chat .container {
+  display: flex;
+  width: 100%;
+}
+.request-chat .inner-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.request-chat .inner-most-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.request-chat .inner-container .last-message {
+  border-bottom: 1px solid #415763;
+}
+
+.request-chat .chat-header-info-avatar {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.request-chat img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rem;
+}
+
+.request-chat .chat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 45%;
+}
+
+.request-chat .img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rem;
+  object-fit: cover;
+  /* border: 2px solid #415763; */
+}
+.request-chat .img.non-present {
+  border: 2px solid #415763;
+}
+
+.request-chat .last {
+  padding-bottom: 1rem;
+  color: #8696a0;
+  font-size: 0.625rem;
+}
+
+.request-chat .request-chat-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 40%;
+  margin-top: -1rem;
+}
+
+.request-chat .request-chat-icons .icon.approve {
+  background-color: #005c4b80;
+  width: 2rem;
+  height: 2rem;
+  color: #111b21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: 5px solid #005c4b00;
+  border-radius: 50%;
+}
+.request-chat .request-chat-icons .icon.reject {
+  background-color: #ff4b2b80;
+  width: 2rem;
+  height: 2rem;
+  color: #111b21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: 5px solid #ff4b2b00;
+  border-radius: 50%;
+}
+.request-chat .request-chat-icons .icon.approve:hover {
+  width: 2rem;
+  height: 2rem;
+  background-color: #005c4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: 0px solid #005c4b;
+  border-radius: 50%;
+}
+.request-chat .request-chat-icons .icon.reject:hover {
+  width: 2rem;
+  height: 2rem;
+  background-color: #ff4b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: 2px solid #ff4b2b;
+  border-radius: 50%;
+}

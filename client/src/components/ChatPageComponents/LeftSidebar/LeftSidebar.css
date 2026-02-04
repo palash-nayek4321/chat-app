@@ -1,0 +1,173 @@
+.left-sidebar {
+  background-color: #222e35;
+  height: 100%;
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .left-sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    padding: 0.5rem 0.25rem;
+    border-bottom: 1px solid #1a242b;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .left-sidebar::-webkit-scrollbar {
+    height: 0.25rem;
+    background-color: transparent;
+  }
+
+  .left-sidebar::-webkit-scrollbar-thumb {
+    background-color: #1f2a31;
+    border-radius: 999px;
+  }
+
+  .left-sidebar .icons {
+    display: contents;
+  }
+
+  .left-sidebar .between-icon-vertical-space-filler {
+    display: none;
+  }
+
+  .left-sidebar .tooltip .tooltiptext {
+    display: none;
+  }
+
+  .left-sidebar .icon,
+  .left-sidebar .avatar .img {
+    width: 2.1rem;
+    height: 2.1rem;
+    font-size: 1.15rem;
+    border-radius: 10px;
+  }
+
+  .left-sidebar .avatar {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+
+  .left-sidebar .icon-container {
+    margin: 0;
+  }
+}
+
+.left-sidebar .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.left-sidebar .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-sidebar .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.left-sidebar .avatar .img {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  /* border: 2px solid #415763; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  overflow: hidden;
+}
+.left-sidebar .avatar .img.no-avatar {
+  border: 2px solid #415763;
+}
+
+.left-sidebar .icon:hover {
+  cursor: pointer;
+  background-color: #41576380;
+}
+
+.left-sidebar .between-icon-vertical-space-filler {
+  height: 60%;
+}
+
+.left-sidebar .active-icon,
+.left-sidebar .active-icon:hover {
+  background-color: #415763;
+}
+
+.left-sidebar .tooltip {
+  position: relative;
+}
+
+.left-sidebar .tooltip .tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  background-color: #bbbbbb;
+  color: #111b21;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 20px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  left: 3rem;
+}
+
+.left-sidebar .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 46%;
+  right: 96%;
+  margin-top: -0.25rem;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #bbbbbb transparent transparent;
+}
+.left-sidebar .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.left-sidebar .friend-requests-icon-container {
+  position: relative;
+}
+
+.left-sidebar .friend-requests-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: orange;
+  width: 1.125rem;
+  height: 1.125rem;
+  font-size: 0.875rem;
+  background-color: #fc9f24;
+  color: #111b21;
+  font-weight: 700;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+}

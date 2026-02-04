@@ -1,0 +1,170 @@
+.friend-requests {
+  background-color: #111b21;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.friend-requests .header {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.friend-requests .sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.friend-requests .sub-header h1 {
+  margin: 0;
+}
+
+.friend-requests .scrollbar-triangle,
+.friend-requests .scrollbar-triangle-upside-down,
+.friend-requests .modal-content .scrollbar-triangle,
+.friend-requests .modal-content .scrollbar-triangle-upside-down {
+  margin-right: 0.05rem;
+  font-size: 0.4rem;
+  color: #222e35;
+}
+.friend-requests .scrollbar-triangle-upside-down,
+.friend-requests .modal-content .scrollbar-triangle-upside-down {
+  margin-bottom: 0.05rem;
+}
+
+.friend-requests .scrollbar-triangle-upside-down,
+.friend-requests .modal-content .scrollbar-triangle-upside-down {
+  transform: rotate(180deg);
+}
+
+.friend-requests .filler-container {
+  display: flex;
+}
+
+.friend-requests .horizontal-filler {
+  width: 100%;
+}
+
+.friend-requests .search-form {
+  position: relative;
+}
+
+.friend-requests .search-icon {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.8rem;
+  color: #e9edef;
+  width: 1.5rem;
+}
+
+.friend-requests .search-form .search-go-back-arrow {
+  cursor: pointer;
+}
+
+.friend-requests .search-input {
+  background-color: #202c33;
+  height: 2.5rem;
+  text-indent: 2.5rem;
+  border-radius: 10px;
+  color: #e9edef;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.friend-requests .search-input:focus {
+  border: none;
+  outline: none;
+}
+
+.friend-requests .contacts-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.friend-requests .contacts-container::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: transparent;
+}
+
+.friend-requests .contacts-container::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #222e35;
+}
+
+.friend-requests .searched-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.friend-requests .searched-contacts .single-contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-left: 2px solid #222e35;
+  background-color: rgba(42, 43, 51, 0.25);
+  color: white;
+}
+
+.friend-requests .searched-contacts .single-contact:hover {
+  background-color: #222e35;
+}
+
+.friend-requests .searched-contacts .single-contact .avatar-main-container {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.friend-requests .searched-contacts .single-contact .avatar-inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.friend-requests .searched-contacts .single-contact .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.friend-requests .searched-contacts .single-contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.friend-requests .searched-contacts .single-contact-info div:last-child {
+  font-size: 0.7rem;
+}
+
+.friend-requests .request-chats-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.friend-requests .request-chats-container::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: transparent;
+}
+
+.friend-requests .request-chats-container::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #222e35;
+}

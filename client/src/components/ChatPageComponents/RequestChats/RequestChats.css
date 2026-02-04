@@ -1,0 +1,16 @@
+.request-chats {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.request-chats::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: transparent;
+}
+
+.request-chats::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  /* background-color: #222e35; */
+  background-color: #111b21;
+}

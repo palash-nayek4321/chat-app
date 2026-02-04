@@ -1,0 +1,30 @@
+.scroll-to-bottom-btn {
+  position: fixed;
+  bottom: 18.5%;
+  right: 3.5%;
+  background-color: #415763;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.scroll-to-bottom-btn.show {
+  opacity: 0.8;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.scroll-to-bottom-btn:hover {
+  opacity: 1;
+}
